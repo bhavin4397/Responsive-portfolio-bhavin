@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Responsive Resume</title>
+    </head>
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif    ;
+            list-style: none;
+        }
+        /* to make a grid */
+        .main-content{
+            min-height: 1000px;
+            width: 90%;
+            margin: 20px auto;
+            display: grid;
+            grid-template-columns: 300px 700px;
+        }
+        .left-section{
+            grid-column: span 1;
+            background-color: #242424;
+        }
+        .right-section{
+            grid-column: span 1/span 2;
+            background-color: #f7f7f7;
+        }
+        /* Styling left Section */
+        .left-content{
+            padding: 1rem;
+        }
+        
+        .profile-image{
+            display: block;
+            margin: auto;
+            border: 5px solid white;
+            border-radius: 30%;
+            width: 60%;
+        }
+        .name{
+            font-size: 1.2rem;
+            font-weight: 700;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 0.02px;
+            padding: 0.8rem;
+            color: white;
+        }
+        .designation{
+            font-size: 1rem;
+            text-align: center;
+            padding: 0.5rem;
+            color: white;
+            text-transform: uppercase;
+        }
+        .description{
+            font-size: 0.75rem;
+            text-align: center;
+            padding: 1rem;
+            color: white;
+        }
+        /* Styling part 3 */
+        .social-media{
+            display: flex;
+            justify-content: space-around;
+        }
+        .personal-details{
+            padding-left: 10%;
+            padding-top: 5%;
+            font-size: smaller;
+            color: white;
+        }
+        .skills-title{
+            font-size: 0.75rem;
+            text-align: center;
+            text-transform: uppercase;
+            padding: 1rem 0.5rem 1rem 0.5rem;
+            color: white;
+        }
+        .skill-name{
+            font-size: 0.65rem;
+            font-weight: 0.65rem;
+            text-align: left;
+            padding-bottom: 0.5rem;
+            color: white;
+        }
+        .progess-bar{
+            border: 1px solid white;
+            height: 4px;
+        }
+        /* styling part 4 */
+        .right-title{
+            text-transform: uppercase;
+            font-size: 1.2rem;
+            font-weight: 700;
+            padding: 0.5rem;
+            letter-spacing: 1px;
+
+        }
+        .right-section{
+            padding: 2rem 3rem 2rem 3rem;
+        }
+        @media screen and (max-width:673px) {
+            .main-content{
+                grid-template-columns: repeat(1,1fr);
+            }
+        }
+    </style>
+    <body>
+        <main class="main-content">
+           <section class="left-section">
+            <div class="left-content">
+                <div class="profile-details">
+                    <div class="profile">
+                        <img class="profile-image" src="Profile-img.png" alt="profile" width="100%">
+                    </div>
+                    <h2 class="name">Bhavin Patidar</h2>
+                    <h4 class="designation">SDE-1</h4>
+                    <hr>
+                    <p class="description">MERN Stack developer &nbsp;|&nbsp; Full Stack Developer &nbsp;|&nbsp; Web Developer</p>  
+                </div>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="social-media">
+                            <li class="icon"><a href="https://www.linkedin.com/login" target="_blank"><img src="Linkedin.png" alt="linkedin" width="32px"></a></li>
+                             <li class="icon"><img src="facebook.png" alt="facebook" width="32px"></li>
+                            <li class="icon"><img src="github.png" alt="github" width="32px"></li>
+                        </div>
+                        <div class="personal-details">
+                            <li class="icon"><img src="phone_iphone_white_24dp.svg" alt="phone">8460316055</li>
+                            <li class="icon"><img src="email_white_24dp.svg" alt="email">bhavinpatidar4397@gmail.com</li>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills">
+                    <h2 class="skills-title">Skills</h2>
+                    <div class="skills-content">
+                        <div class="skill-items">
+                            <div class="skill-name">
+                                <h3>HTML</h3>
+                            </div>
+                            <div class="skill-progess">
+                                <div class="progess-bar" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-items">
+                            <div class="skill-name">
+                                <h3>CSS</h3>
+                            </div>
+                            <div class="skill-progess">
+                                <div class="progess-bar" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <h3>JAVASCRIPT</h3>
+                            </div>
+                            <div class="skill-progess">
+                                <div class="progess-bar" style="width: 70%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            
+           </section> 
+           <section class="right-section">
+           <div class="right-main-content">
+            <section class="about sect">
+                <h2 class="right-title">About Me</h2>
+                <p class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. A nostrum totam nesciunt illum, corporis laudantium ipsum mollitia libero quia qui dolorem atque labore sed tenetur inventore? Iure soluta, tenetur id error alias accusantium nobis aut. Qui reprehenderit dolores ad est quo explicabo laudantium libero autem iure, voluptatibus porro, eum expedita, quod cupiditate asperiores ullam blanditiis repellat pariatur optio. Tenetur velit mollitia aliquid ducimus eveniet repudiandae quis omnis optio, delectus, amet sequi culpa fuga nam necessitatibus laboriosam voluptatibus non, animi error excepturi. Consequatur asperiores et veritatis sunt fuga quidem eaque, voluptates quia dolorum deserunt magnam in tenetur error reprehenderit minima amet.</p>
+            </section>
+            <section class="education sect">
+                <h2 class="right-title">Education</h2>
+                <div class="education">
+                    <ul>
+                        <li><pre>M.Tech in Industrial Design
+        National Institute of Technology Rourkela 
+        2019 – 2021</pre>
+                        </li>
+                        <li><pre>B.E. in Mechanical Engineering
+        Jabalpur Engineering College Jabalpur
+        2014 – 2018</pre></li>
+                    </ul>
+                </div>
+            </section>
+            <section class="Experience sect">
+                <h2 class="right-title">Experience</h2>
+                <div class="experience">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa non itaque nihil provident beatae ut suscipit magnam id, aliquam deserunt ullam similique rem asperiores adipisci nemo hic accusantium esse iste.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A recusandae illum, laudantium magnam odio architecto quam sunt rem molestiae enim? Laboriosam cupiditate deleniti quasi iusto commodi saepe quia quae illo!</p>
+                </div>
+            </section>
+           </div>
+           </section>
+        </main>
+    </body>
+</html>
